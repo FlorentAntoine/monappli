@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // Declarative //
 pipeline {
 	agent any
@@ -18,4 +19,26 @@ pipeline {
 			}
 		}
 	}
+=======
+// Declarative //
+pipeline {
+	agent any
+	stages {
+		stage('Build') {
+			steps {
+				echo 'Building..'
+			}
+		}
+		stage('Test') {
+			steps {
+				echo 'Testing..'
+			}
+		}
+		stage('Deploy') {
+			steps {
+				echo 'Deploying....'
+			}
+		}
+	}
+>>>>>>> 88e3f8392d697841f73fa0be89a1bdbb0872b205
 }
